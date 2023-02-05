@@ -7,7 +7,7 @@ const baseUrl = "https://api.thecatapi.com/v1";
 const options = {
   headers: {
     "x-api-key":
-      "live_r8MgPKaoyvCnkZeZk33jzOxd9IzvNK0iu2hA2FQ7eGzLLSgwFsrP81TGuLiKtPfp", // public test key
+      "live_r8MgPKaoyvCnkZeZk33jzOxd9IzvNK0iu2hA2FQ7eGzLLSgwFsrP81TGuLiKtPfp", // test
   },
 };
 

@@ -1,4 +1,12 @@
 const theme = {
+  sizes: {
+    search: {
+      height: "90px",
+    },
+    pagination: {
+      height: "80px",
+    },
+  },
   colors: {
     font: {
       medium: "#333",
