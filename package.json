@@ -12,15 +12,17 @@
     "@types/react-dom": "^18.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.6",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "jest",
+    "testing": "craco test"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +41,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/react-test-renderer": "^18.0.0",
+    "@types/styled-components": "^5.1.26",
+    "craco": "^0.0.3",
+    "jest": "^27.5.1",
+    "react-test-renderer": "^18.2.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png)$": "<rootDir>/tests/utils/mocks/fileMock",
+      "@common/(.+)": "<rootDir>/src/common/$1",
+      "@modules/(.+)": "<rootDir>/src/modules/$1",
+      "@testUtils/(.+)": "<rootDir>/tests/utils/$1"
+    }
   }
 }
