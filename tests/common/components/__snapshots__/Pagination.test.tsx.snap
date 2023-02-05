@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List doesn't show anything 1`] = `null`;
+
+exports[`List shows 4 initial pages and the last page 1`] = `
+<div
+  className="sc-bcXHqe VdVlc"
+  disabled={false}
+>
+  <div
+    className="sc-gswNZR jxmpEH"
+  >
+    <div
+      className="sc-dkrFOg eVAtTd"
+      onClick={[Function]}
+    >
+      1
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      2
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      3
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      4
+    </div>
+    <div
+      className="sc-hLBbgP dhXWtN"
+    >
+      ...
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      10
+    </div>
+  </div>
+</div>
+`;
+
+exports[`List shows 7 pages 1`] = `
+<div
+  className="sc-bcXHqe VdVlc"
+  disabled={false}
+>
+  <div
+    className="sc-gswNZR jxmpEH"
+  >
+    <div
+      className="sc-dkrFOg eVAtTd"
+      onClick={[Function]}
+    >
+      1
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      2
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      3
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      4
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      5
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      6
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      7
+    </div>
+  </div>
+</div>
+`;
+
+exports[`List shows disabled state 1`] = `
+<div
+  className="sc-bcXHqe cPnbMQ"
+  disabled={true}
+>
+  <div
+    className="sc-gswNZR jxmpEH"
+  >
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      1
+    </div>
+    <div
+      className="sc-hLBbgP dhXWtN"
+    >
+      ...
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      4
+    </div>
+    <div
+      className="sc-dkrFOg eVAtTd"
+      onClick={[Function]}
+    >
+      5
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      6
+    </div>
+    <div
+      className="sc-hLBbgP dhXWtN"
+    >
+      ...
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      10
+    </div>
+  </div>
+</div>
+`;
+
+exports[`List shows first page, three middle pages and the last page 1`] = `
+<div
+  className="sc-bcXHqe VdVlc"
+  disabled={false}
+>
+  <div
+    className="sc-gswNZR jxmpEH"
+  >
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      1
+    </div>
+    <div
+      className="sc-hLBbgP dhXWtN"
+    >
+      ...
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      4
+    </div>
+    <div
+      className="sc-dkrFOg eVAtTd"
+      onClick={[Function]}
+    >
+      5
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      6
+    </div>
+    <div
+      className="sc-hLBbgP dhXWtN"
+    >
+      ...
+    </div>
+    <div
+      className="sc-dkrFOg EGNnJ"
+      onClick={[Function]}
+    >
+      10
+    </div>
+  </div>
+</div>
+`;

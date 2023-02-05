@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Optional doesn't render a child 1`] = `null`;
+
+exports[`Optional renders a child 1`] = `<div />`;
