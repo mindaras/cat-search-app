@@ -1,6 +1,6 @@
 {
-  "short_name": "Cats App",
-  "name": "Application of cat images",
+  "short_name": "Cats search app",
+  "name": "Search application of cat images",
   "icons": [
     {
       "src": "favicon.ico",

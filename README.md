@@ -1,4 +1,4 @@
-# Cats application
+# Cats search app
 
 URL: https://mindaugaslazauskas.com
 
