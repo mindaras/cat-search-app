@@ -34,7 +34,7 @@ const getAll = async ({ page, order, breed }: FilterParameters) => {
       options
     );
     const count = headers?.get("pagination-count") || "0";
-    const pageCount = Math.floor(parseInt(count, 10) / limit) || defaultPageCount;
+    const pageCount = Math.floor(parseInt(count, 10) / limit) ?? defaultPageCount;
     const data = toDataResponse<Cat[]>(response);
     return { data, pageCount };
   } catch (err) {
