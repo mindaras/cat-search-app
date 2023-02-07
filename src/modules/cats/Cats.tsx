@@ -15,8 +15,7 @@ const Cats: React.FC = () => {
   const [cats, setCats] = useState<Types.Cat[]>([]);
   const [breeds, setBreeds] = useState<Types.Breed[]>([]);
   const [isLoading, setLoading] = useState(false);
-  const initialPageCount = 100;
-  const [pageCount, setPageCount] = useState(initialPageCount);
+  const [pageCount, setPageCount] = useState(0);
   const { page: pageParam, order, breed, search: searchTerm } = searchParams;
   const page = pageParam || "1";
   const breedOptions = [
@@ -54,16 +53,11 @@ const Cats: React.FC = () => {
 
   const updatePageCount = useCallback(
     (newPageCount: number) => {
-      if (order !== Types.Order.Random && newPageCount !== pageCount) {
+      if (newPageCount !== pageCount) {
         setPageCount(newPageCount);
-      } else if (
-        order === Types.Order.Random &&
-        pageCount !== initialPageCount
-      ) {
-        setPageCount(initialPageCount);
       }
     },
-    [pageCount, order]
+    [pageCount]
   );
 
   const getCats = useCallback(
@@ -97,7 +91,8 @@ const Cats: React.FC = () => {
   };
 
   const onBreedFilterChange = (option: Option) => {
-    setSearchParams({ ...searchParams, breed: option.value as string });
+    const newPage = breed === option.value ? page : "1"
+    setSearchParams({ ...searchParams, page: newPage, breed: option.value as string });
   };
 
   const onPageChange = (newPage: number) => {

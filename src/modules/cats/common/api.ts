@@ -19,6 +19,7 @@ export interface FilterParameters {
 
 const getAll = async ({ page, order, breed }: FilterParameters) => {
   const limit = 12;
+  const defaultPageCount = 100
   const url = new URL(baseUrl);
   url.pathname += "/images/search";
   url.searchParams.append("limit", limit.toString());
@@ -33,7 +34,7 @@ const getAll = async ({ page, order, breed }: FilterParameters) => {
       options
     );
     const count = headers?.get("pagination-count") || "0";
-    const pageCount = Math.floor(parseInt(count, 10) / limit);
+    const pageCount = Math.floor(parseInt(count, 10) / limit) || defaultPageCount;
     const data = toDataResponse<Cat[]>(response);
     return { data, pageCount };
   } catch (err) {
