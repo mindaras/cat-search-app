@@ -18,11 +18,11 @@ export interface FilterParameters {
 }
 
 const getAll = async ({ page, order, breed }: FilterParameters) => {
-  const limit = 12;
-  const defaultPageCount = 100
+  const limit = "12";
+  const defaultCount = breed ? "0" : "1200"
   const url = new URL(baseUrl);
   url.pathname += "/images/search";
-  url.searchParams.append("limit", limit.toString());
+  url.searchParams.append("limit", limit);
 
   if (page) url.searchParams.append("page", page.toString());
   if (order) url.searchParams.append("order", order);
@@ -33,8 +33,8 @@ const getAll = async ({ page, order, breed }: FilterParameters) => {
       url.toString(),
       options
     );
-    const count = headers?.get("pagination-count") || "0";
-    const pageCount = Math.floor(parseInt(count, 10) / limit) ?? defaultPageCount;
+    const count = headers?.get("pagination-count") ?? defaultCount;
+    const pageCount = Math.floor(parseInt(count, 10) / parseInt(limit, 10));
     const data = toDataResponse<Cat[]>(response);
     return { data, pageCount };
   } catch (err) {
