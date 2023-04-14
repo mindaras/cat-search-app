@@ -1,7 +1,5 @@
 # Cat search app
 
-URL: https://mindaugaslazauskas.com
-
 ## Commands
 
 ### Start development server
